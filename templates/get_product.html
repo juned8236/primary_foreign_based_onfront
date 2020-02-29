@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<form method="post" id="productForm" style="margin-left:20%;" enctype="multipart/form-data" >
+  {% csrf_token %}
+  {# A more "HTML" way of creating the login form#}
+  <label for="cars">Company:</label>
+<select name="comp1">
+  {% for x in data %}
+  <option value="{{ x.company_id }}" >{{x.company_id}}</option>
+  {% endfor %}
+</select>
+      <div>
+      <label style="margin-left:-17%" for="product_name">Product Name</label>
+      <input  style="width: 27%;"  type="" name="product_name" id="product_name" 
+      placeholder="product_name Name">
+      </div>
+      <div>
+      </br>
+      <label style="margin-left:-17%" for="product_code">Cost:</label>
+      <input  style="width: 27%; margin-left: 1%;"  type="number" name="cost" id="cost" 
+      placeholder="Cost"> 
+      
+      </div>
+      </br>    
+    <td></td><td></td>
+    <tr>
+      <td colspan="2"><input style="margin-left: -17%;
+margin-top: 4%;
+width: 19%;"  type="submit" value="Add"></td>
+    </tr>
+ 
+
+</form>
+</body>
+</html>

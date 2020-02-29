@@ -1,0 +1,17 @@
+python manage.py shell
+from app.models import Company
+from app.models import Product
+Company.objects.all()
+a=Company(company_id='6)
+a.save()
+b=Company.objects.all()
+b.count()
+b.all()
+b.filter(company_id='6')
+
+aa=Company.objects.get(pk='6')
+aa
+
+>>> r=Company(company_id=5)
+>>> r.save()
+>>> a=Product(product_name='jda1',product_id=r)
