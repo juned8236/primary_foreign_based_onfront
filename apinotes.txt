@@ -1,0 +1,3 @@
+pip install django_rest_framework
+install_pp
+    'rest_framework',
