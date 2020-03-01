@@ -15,3 +15,6 @@ aa
 >>> r=Company(company_id=5)
 >>> r.save()
 >>> a=Product(product_name='jda1',product_id=r)
+
+=============================
+python manage.py dumpdata app
