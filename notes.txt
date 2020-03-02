@@ -18,3 +18,7 @@ aa
 
 =============================
 python manage.py dumpdata app
+python manage.py flush
+
+
+pip install djangorestframework-jwt

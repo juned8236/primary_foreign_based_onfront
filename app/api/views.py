@@ -14,6 +14,16 @@ class CompanyListApi(APIView):
         serializer=CompanySerializer(qs,many=True)
         return Response(serializer.data)
 
+
+
+
+    # http://127.0.0.1:8002/api/companynupdatendelete/14/ 
+class CompanyRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset=Company.objects.all()
+    serializer_class=CompanySerializer
+    lookup_field='id'
+
+
 # list all 
 # http://127.0.0.1:8000/api/product/
 

@@ -3,7 +3,7 @@ from app.models import Company,Product
 
 # Register your models here.
 class CompanyAdmin(admin.ModelAdmin):
-    list_display=['id','company_id','gst']
+    list_display=['id','company','gst']
 
 
 class ProductAdmin(admin.ModelAdmin):

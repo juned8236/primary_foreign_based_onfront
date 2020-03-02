@@ -2,6 +2,7 @@
     <!-- Main content -->
     <div class="content-wrapper" >
     <div class="jumbotron">
+      <a href="{% url  "addproduct" %}">Add product</a>
     <form method="post" id="productForm" style="margin-left:20%;" enctype="multipart/form-data" >
           {% csrf_token %}
           {# A more "HTML" way of creating the login form#}
